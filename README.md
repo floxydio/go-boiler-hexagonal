@@ -1,6 +1,6 @@
 ## Hexagonal Architecture GO
 
-`
+```
 /app
 │── cmd/
 │   └── app/
@@ -12,16 +12,13 @@
 │   │   └── ports.go         # Ports (interface service/repo)
 │   │
 │   ├── application/         # Use cases (Application services)
-│   │   ├── booking_service.go
-│   │   └── user_service.go
+│   │   ├── product_service.go
 │   │
 │   ├── adapters/            # Adapters (ports)
 │   │   ├── db/
-│   │   │   ├── gorm_booking_repository.go
-│   │   │   └── gorm_user_repository.go
+│   │   │   └── gorm_product_repository.go
 │   │   ├── http/
-│   │   │   ├── booking_handler.go
-│   │   │   └── user_handler.go
+│   │   │   └── product_handler.go
 │   │   └── config/
 │   │       └── db.go        # DB
 │   │
@@ -35,4 +32,11 @@
 │── go.mod
 │── go.sum
 
-`
+```
+
+
+
+## Author
+
+- [floxydio](https://www.github.com/floxydio)
+
